@@ -4257,3 +4257,26 @@ class MigrationsSamplesJsonTest(ApiSampleTestBase):
 
 class MigrationsSamplesXmlTest(MigrationsSamplesJsonTest):
     ctype = 'xml'
+
+
+class CreateLiveImageJsonTest(ServersSampleBase):
+    extension_name = ("nova.api.openstack.compute.contrib."
+                     "create_live_image.Create_live_image")
+
+    def setUp(self):
+        super(CreateLiveImageJsonTest, self).setUp()
+
+    def _test_server_action(self, uuid, action):
+        response = self._do_post('servers/%s/action' % uuid,
+            'os-create-live-image',
+            {'action': action})
+        self.assertEqual(response.status, 202)
+        self.assertEqual(response.read(), "")
+
+    def test_create_live_image(self):
+        uuid = self._post_server()
+        self._test_server_action(uuid, 'os-createLiveImage')
+
+
+class CreateLiveImageXmlTest(ShelveJsonTest):
+    ctype = 'xml'

@@ -90,6 +90,9 @@
   <extension alias="os-coverage" updated="%(timestamp)s" namespace="http://docs.openstack.org/compute/ext/coverage/api/v2" name="Coverage">
     <description>%(text)s</description>
   </extension>
+  <extension alias="os-create-live-image" updated="%(timestamp)s" namespace="http://docs.openstack.org/compute/ext/os-create-live-image/api/v2" name="CreateLiveImage">
+      <description>%(text)s</description>
+  </extension>
   <extension alias="os-create-server-ext" updated="%(timestamp)s" namespace="http://docs.openstack.org/compute/ext/createserverext/api/v1.1" name="Createserverext">
     <description>%(text)s</description>
   </extension>

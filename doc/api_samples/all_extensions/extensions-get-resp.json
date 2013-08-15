@@ -233,6 +233,14 @@
             "updated": "2012-10-15T00:00:00+00:00"
         },
         {
+            "alias": "os-create-live-image",
+            "description": "A live snapshot is a bootable image including memory and processor state",
+            "links": [],
+            "name": "CreateLiveImage",
+            "namespace": "http://docs.openstack.org/compute/ext/os-create-live-image/api/v2",
+            "updated": "2011-07-19T00:00:00+00:00"
+        },
+        {
             "alias": "os-create-server-ext",
             "description": "Extended support to the Create Server v1.1 API.",
             "links": [],

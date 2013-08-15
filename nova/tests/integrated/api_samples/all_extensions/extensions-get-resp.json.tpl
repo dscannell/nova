@@ -241,6 +241,14 @@
             "updated": "%(timestamp)s"
         },
         {
+            "alias": "os-create-live-image",
+            "description": "%(text)s",
+            "links": [],
+            "name": "CreateLiveImage",
+            "namespace": "http://docs.openstack.org/compute/ext/os-create-live-image/api/v2",
+            "updated": "%(timestamp)s"
+        },
+        {
             "alias": "os-create-server-ext",
             "description": "%(text)s",
             "links": [],

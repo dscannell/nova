@@ -103,6 +103,9 @@
   <extension alias="os-coverage" updated="2012-10-15T00:00:00+00:00" namespace="http://docs.openstack.org/compute/ext/coverage/api/v2" name="Coverage">
     <description>Enable Nova Coverage.</description>
   </extension>
+  <extension alias="os-create-live-image" updated="2012-10-15T00:00:00+00:00" namespace="http://docs.openstack.org/compute/ext/os-create-live-image/api/v2" name="CreateLiveImage">
+    <description>A live snapshot is a bootable image including memory and processor state.</description>
+  </extension>
   <extension alias="os-create-server-ext" updated="2011-07-19T00:00:00+00:00" namespace="http://docs.openstack.org/compute/ext/createserverext/api/v1.1" name="Createserverext">
     <description>Extended support to the Create Server v1.1 API.</description>
   </extension>

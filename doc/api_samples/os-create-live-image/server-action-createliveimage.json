@@ -1,0 +1,8 @@
+{
+    "createLiveImage" : {
+        "name" : "foo-live-image",
+        "metadata": {
+            "myvar": "foobar"
+        }
+    }
+}
